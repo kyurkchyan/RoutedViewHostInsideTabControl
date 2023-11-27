@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <OutputType>WinExe</OutputType>
-        <TargetFramework>net7.0</TargetFramework>
+        <TargetFramework>net8.0</TargetFramework>
         <Nullable>enable</Nullable>
         <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
         <ApplicationManifest>app.manifest</ApplicationManifest>
@@ -15,13 +15,13 @@
 
 
     <ItemGroup>
-        <PackageReference Include="Avalonia" Version="11.0.5" />
-        <PackageReference Include="Avalonia.Desktop" Version="11.0.5" />
-        <PackageReference Include="Avalonia.Themes.Fluent" Version="11.0.5" />
-        <PackageReference Include="Avalonia.Fonts.Inter" Version="11.0.5" />
+        <PackageReference Include="Avalonia" Version="11.1.999-cibuild0042398-beta" />
+        <PackageReference Include="Avalonia.Desktop" Version="11.1.999-cibuild0042398-beta" />
+        <PackageReference Include="Avalonia.Themes.Fluent" Version="11.1.999-cibuild0042398-beta" />
+        <PackageReference Include="Avalonia.Fonts.Inter" Version="11.1.999-cibuild0042398-beta" />
         <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
-        <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.0.5" />
-        <PackageReference Include="Avalonia.ReactiveUI" Version="11.0.5" />
+        <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.1.999-cibuild0042398-beta" />
+        <PackageReference Include="Avalonia.ReactiveUI" Version="11.1.999-cibuild0042398-beta" />
         <PackageReference Include="FluentAvaloniaUI" Version="2.0.4" />
         <PackageReference Include="ReactiveUI" Version="19.5.1" />
         <PackageReference Include="ReactiveUI.Fody" Version="19.5.1" />
