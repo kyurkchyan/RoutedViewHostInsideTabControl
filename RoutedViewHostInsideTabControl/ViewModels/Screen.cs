@@ -1,6 +1,6 @@
 using ReactiveUI;
 
-namespace AvaloniaApplication1.ViewModels;
+namespace RoutedViewHostInsideTabControl.ViewModels;
 
 public class Screen : IScreen
 {

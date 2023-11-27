@@ -2,7 +2,7 @@ using System;
 using Avalonia.Controls;
 using FluentAvalonia.UI.Controls;
 
-namespace AvaloniaApplication1;
+namespace RoutedViewHostInsideTabControl;
 
 public class NavigationPageFactory : INavigationPageFactory
 {

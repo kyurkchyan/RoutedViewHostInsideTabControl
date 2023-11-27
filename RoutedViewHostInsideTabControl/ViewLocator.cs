@@ -1,9 +1,9 @@
 using System;
 using Avalonia.Controls;
 using Avalonia.Controls.Templates;
-using AvaloniaApplication1.ViewModels;
+using RoutedViewHostInsideTabControl.ViewModels;
 
-namespace AvaloniaApplication1;
+namespace RoutedViewHostInsideTabControl;
 
 public class ViewLocator : IDataTemplate
 {

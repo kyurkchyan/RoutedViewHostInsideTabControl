@@ -5,14 +5,16 @@ using RoutedViewHostInsideTabControl.ViewModels;
 
 namespace RoutedViewHostInsideTabControl.Views;
 
-public partial class EmployeesView : ReactiveUserControl<EmployeesViewModel>
+public partial class CompanyView : ReactiveUserControl<CompanyViewModel>
 {
-    public EmployeesView()
+    public CompanyView()
     {
         InitializeComponent();
         this.WhenActivated(disposables =>
         {
-            this.OneWayBind(ViewModel, vm => vm.Employees, v => v.EmployeesListBox.ItemsSource)
+            this.BindCommand(ViewModel, vm => vm.GoBackCommand, v => v.GoBackButton)
+                .DisposeWith(disposables);
+            this.OneWayBind(ViewModel, vm => vm.Name, v => v.CompanyNameTextBlock.Text)
                 .DisposeWith(disposables);
         });
     }

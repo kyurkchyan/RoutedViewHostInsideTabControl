@@ -5,10 +5,10 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:reactiveUi="http://reactiveui.net"
-    xmlns:viewModels="clr-namespace:AvaloniaApplication1.ViewModels"
     xmlns:system="clr-namespace:System;assembly=System.Runtime"
+    xmlns:viewModels="clr-namespace:RoutedViewHostInsideTabControl.ViewModels"
     mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-    x:Class="AvaloniaApplication1.Views.CompaniesView">
+    x:Class="RoutedViewHostInsideTabControl.Views.CompaniesView">
     <StackPanel>
         <TextBlock
             Text="Companies"

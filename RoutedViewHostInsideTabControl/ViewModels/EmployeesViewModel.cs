@@ -1,6 +1,6 @@
 using ReactiveUI;
 
-namespace AvaloniaApplication1.ViewModels;
+namespace RoutedViewHostInsideTabControl.ViewModels;
 
 public class EmployeesViewModel : ViewModelBase, IRoutableViewModel
 {
@@ -12,5 +12,5 @@ public class EmployeesViewModel : ViewModelBase, IRoutableViewModel
         { "John", "Paul", "George", "Ringo", "Mick", "Keith", "Charlie", "Ronnie", "Bill", "Brian" };
 
     public string? UrlPathSegment => "Employees";
-    public IScreen HostScreen { get; }
+    public IScreen? HostScreen { get; }
 }
