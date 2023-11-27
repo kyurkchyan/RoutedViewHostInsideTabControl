@@ -1,0 +1,25 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:routedViewHostInsideTabControl="clr-namespace:RoutedViewHostInsideTabControl"
+        xmlns:viewModels="clr-namespace:RoutedViewHostInsideTabControl.ViewModels"
+        mc:Ignorable="d" Width="800" Height="450"
+        x:Class="RoutedViewHostInsideTabControl.Views.NavigationHostDialog"
+        Title="NavigationHostDialog"
+        x:DataType="viewModels:HomeViewModel"
+        WindowStartupLocation="CenterOwner">
+    <Window.DataContext>
+        <viewModels:HomeViewModel/>
+    </Window.DataContext>
+    <TabControl>
+        <TabItem Header="Companies">
+            <routedViewHostInsideTabControl:NavigationHost
+                Router="{Binding Companies.Router}" />
+        </TabItem>
+        <TabItem Header="Employees">
+            <routedViewHostInsideTabControl:NavigationHost
+                Router="{Binding Employees.Router}" />
+        </TabItem>
+    </TabControl>
+</Window>

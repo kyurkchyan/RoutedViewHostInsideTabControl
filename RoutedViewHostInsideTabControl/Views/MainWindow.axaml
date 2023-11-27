@@ -3,36 +3,34 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:viewModels="clr-namespace:RoutedViewHostInsideTabControl.ViewModels"
-        xmlns:views="clr-namespace:RoutedViewHostInsideTabControl.Views"
-        xmlns:routedViewHostInsideTabControl="clr-namespace:RoutedViewHostInsideTabControl"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        mc:Ignorable="d" Width="1024" Height="768"
         x:Class="RoutedViewHostInsideTabControl.Views.MainWindow"
-        x:DataType="viewModels:MainWindowViewModel"
+        x:DataType="viewModels:HomeViewModel"
         Icon="/Assets/avalonia-logo.ico"
         Title="RoutedViewHostInsideTabControl">
 
-    <TabControl>
-        <TabItem Header="Companies">
-            <routedViewHostInsideTabControl:NavigationHost
-                Router="{Binding Companies.Router}" />
-        </TabItem>
-        <TabItem Header="Employees">
-            <routedViewHostInsideTabControl:NavigationHost
-                Router="{Binding Employees.Router}" />
-        </TabItem>
-    </TabControl>
-
-    <!-- <TabControl> -->
-    <!--     <TabItem Header="Companies"> -->
-    <!--         <TransitioningContentControl -->
-    <!--             x:Name="CompaniesView"> -->
-    <!--         </TransitioningContentControl> -->
-    <!--     </TabItem> -->
-    <!--     <TabItem Header="Employees"> -->
-    <!--         <TransitioningContentControl -->
-    <!--             x:Name="EmployeesView"> -->
-    <!--         </TransitioningContentControl> -->
-    <!--     </TabItem> -->
-    <!-- </TabControl> -->
+    <StackPanel
+        Spacing="20"
+        HorizontalAlignment="Center"
+        VerticalAlignment="Center">
+        <Button
+            Click="OnNavigationHostSampleClicked"
+            Content="Run Fixed RoutedViewHost Tab Sample"
+            Foreground="White"
+            Background="Green"
+            HorizontalAlignment="Center" />
+        <Button
+            Click="OnRoutedViewHostSampleClicked"
+            Content="Run Problematic RoutedViewHost Tab Sample"
+            Foreground="White"
+            Background="Red"
+            HorizontalAlignment="Center" />
+        <Button
+            Click="OnTransitioningContentControlSampleClicked"
+            Content="Run Problematic TransitioningContentControl Tab Sample"
+            Foreground="White"
+            Background="Red"
+            HorizontalAlignment="Center" />
+    </StackPanel>
 
 </Window>

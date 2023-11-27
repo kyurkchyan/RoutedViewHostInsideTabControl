@@ -2,9 +2,9 @@
 
 namespace RoutedViewHostInsideTabControl.ViewModels;
 
-public class MainWindowViewModel : ViewModelBase
+public class HomeViewModel : ViewModelBase
 {
-    public MainWindowViewModel()
+    public HomeViewModel()
     {
         Companies = new Screen();
         Companies.Router.NavigateAndReset.Execute(new CompaniesViewModel(Companies));

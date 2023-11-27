@@ -33,5 +33,17 @@
         <DependentUpon>Employees.axaml</DependentUpon>
         <SubType>Code</SubType>
       </Compile>
+      <Compile Update="Views\NavigationHostDialog.axaml.cs">
+        <DependentUpon>NavigationHostDialog.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Views\RoutedViewHostDialog.axaml.cs">
+        <DependentUpon>RoutedViewHostDialog.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Views\TransitioningContentControlDialog.axaml.cs">
+        <DependentUpon>TransitioningContentControlDialog.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
     </ItemGroup>
 </Project>
